@@ -3,9 +3,9 @@ import java.time.LocalDate;
 import java.time.Period;
 
 public class App {
+    public static Scanner sc=new Scanner(System.in);
     public static void main(String[] args) throws Exception {
         // NOTA: Variables
-        Scanner sc = new Scanner(System.in);
         int op = -1;
 
         // NOTA: Bucle main
@@ -47,12 +47,11 @@ public class App {
             System.out.print("\033[H\033[2J");
             System.out.flush();
         }
-
+        sc.close();
     }
 
     public static void edad() {
         // NOTA: Variables
-        Scanner sc = new Scanner(System.in);
         int year, month, day, vacio;
 
         // NOTA: Clear
@@ -84,7 +83,6 @@ public class App {
 
     public static void temperaturas() {
         // NOTA: Variables
-        Scanner sc = new Scanner(System.in);
         int op, vacio;
         String[] gradosOp = {
             "[1] Grados Celsius a Grados Fahrenheit",
@@ -126,7 +124,6 @@ public class App {
 
     public static double[] tempeCore(String grado1, String grado2, int option) {
         // NOTA: Variables
-        Scanner sc = new Scanner(System.in);
         double temp1=0, temp2=0;
 
         System.out.printf("%s a convertir:\n", grado1);
@@ -154,7 +151,6 @@ public class App {
 
     public static void datos() {
         // NOTA: Variables
-        Scanner sc = new Scanner(System.in);
         int vacio;
         String[] datos = {"","","","",""}, list = {"nombre", "apellido", "dirección", "correo", "teléfono"};
 
@@ -183,7 +179,6 @@ public class App {
 
     public static void calcu() {
         // NOTA: Variables
-        Scanner sc = new Scanner(System.in);
         int op = 0, vacio;
         double num1, num2;
 
@@ -238,7 +233,6 @@ public class App {
 
     public static void random() {
         // NOTA: Variables
-        Scanner sc = new Scanner(System.in);
         double min = 25, max = 75, value = 0, vacio;
 
         // NOTA: Clear
@@ -258,7 +252,6 @@ public class App {
 
     public static void mates() {
         // NOTA: Variables
-        Scanner sc = new Scanner(System.in);
         int num, vacio;
 
         // NOTA: Clear
